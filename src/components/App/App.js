@@ -15,7 +15,15 @@ const App = () => (
 	<ThemeProvider theme={theme}>
 		<Fragment>
 			<GlobalStyle />
-			<Content />
+			<div className="App">
+				<section className="Section">
+					<p>Hello world</p>
+					<ul>
+						<li>first</li>
+						<li>second</li>
+					</ul>
+				</section>
+			</div>
 		</Fragment>
 	</ThemeProvider>
 );
