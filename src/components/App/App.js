@@ -29,7 +29,8 @@ class App extends Component {
 					<Box>
 						<input name="age" value={age} onChange={this.handleAgeChange} />
 					</Box>
-					<Button active onClick={this.handleClick} variant="primary">
+
+					<Button onClick={this.handleClick} variant="primary">
 						Click
 					</Button>
 				</Fragment>
