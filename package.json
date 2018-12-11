@@ -11,6 +11,8 @@
     "styled-components": "^4.1.2"
   },
   "devDependencies": {
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
     "prettier": "^1.14.3",
     "prop-types": "^15.6.2"
   },

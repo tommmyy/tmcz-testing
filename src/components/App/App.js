@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
-import Content from '../Content';
 import theme from './theme';
 
 const GlobalStyle = createGlobalStyle({
@@ -10,11 +9,13 @@ const GlobalStyle = createGlobalStyle({
 	},
 });
 
+const Content = () => <div>Content</div>;
+
 const App = () => (
 	<ThemeProvider theme={theme}>
 		<Fragment>
-			<Content />
 			<GlobalStyle />
+			<Content />
 		</Fragment>
 	</ThemeProvider>
 );

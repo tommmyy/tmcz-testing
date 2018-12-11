@@ -1,9 +1,0 @@
-.ProgressBar {
-	background-color: lightgray;
-}
-.ProgressBar-bar {
-	background-color: lime;
-	height: 4px;
-	transform-origin: left;
-	transition: transform 0.3s ease;
-}
