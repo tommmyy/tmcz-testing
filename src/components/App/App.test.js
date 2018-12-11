@@ -24,4 +24,21 @@ describe('App', () => {
 	it('contains section with className .Section', () => {
 		expect(wrapper.find('section').hasClass('Section')).toBe(true);
 	});
+
+	it('every child of ul is li', () => {
+		expect(
+			wrapper
+				.find('ul')
+				.children()
+				.every('li')
+		).toBe(true);
+	});
+
+	it('contains element with property name equal to age', () => {
+		expect(wrapper.find('[name="age"]').exists()).toBe(true);
+	});
+
+	it('contains element with property variant equal to primary and property active to equal true', () => {
+		expect(wrapper.find({ variant: 'primary', active: true }).exists()).toBe(true);
+	});
 });

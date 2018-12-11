@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { Button } from 'rebass';
 import theme from './theme';
 
 const GlobalStyle = createGlobalStyle({
@@ -8,8 +9,6 @@ const GlobalStyle = createGlobalStyle({
 		padding: 0,
 	},
 });
-
-const Content = () => <div>Content</div>;
 
 const App = () => (
 	<ThemeProvider theme={theme}>
@@ -22,6 +21,10 @@ const App = () => (
 						<li>first</li>
 						<li>second</li>
 					</ul>
+					<input name="age" />
+					<Button active variant="primary">
+						Click
+					</Button>
 				</section>
 			</div>
 		</Fragment>
