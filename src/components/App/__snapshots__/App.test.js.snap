@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches snapshots 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "Heading": Object {
+        "lineHeight": 1.25,
+      },
+      "Text": Object {
+        "fontFamily": "system-ui, sans-serif",
+      },
+      "colors": Object {
+        "blue": "#07c",
+        "lightgray": "#f6f6ff",
+      },
+      "fontSizes": Array [
+        12,
+        14,
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+      ],
+      "fonts": Object {
+        "mono": "Menlo, monospace",
+        "sans": "system-ui, sans-serif",
+      },
+      "shadows": Object {
+        "large": "0 0 24px rgba(0, 0, 0, .125)",
+        "small": "0 0 4px rgba(0, 0, 0, .125)",
+      },
+      "space": Array [
+        0,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+      ],
+    }
+  }
+>
+  <GlobalStyleComponent />
+  <div
+    className="App"
+  >
+    <section
+      className="Section"
+    >
+      <p>
+        Hello world
+      </p>
+      <ul>
+        <li>
+          first
+        </li>
+        <li>
+          second
+        </li>
+      </ul>
+      <input
+        name="age"
+      />
+      <Styled(styled.div)
+        active={true}
+        as="button"
+        bg="blue"
+        border={0}
+        borderRadius={4}
+        color="white"
+        fontSize="inherit"
+        fontWeight="bold"
+        m={0}
+        px={3}
+        py={2}
+        variant="primary"
+      >
+        Click
+      </Styled(styled.div)>
+    </section>
+  </div>
+</ThemeProvider>
+`;
