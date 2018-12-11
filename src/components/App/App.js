@@ -16,6 +16,7 @@ class App extends Component {
 
 	handleAgeChange = (e) => this.setState({ age: e.target.value });
 	handleClick = (e) => this.setState({ clicked: true });
+	componentDidMount() {}
 
 	render() {
 		const { age, clicked } = this.state;
